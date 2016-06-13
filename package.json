@@ -1,0 +1,53 @@
+{
+  "name": "retry-backoff",
+  "description": "Stream/callback retries with incremental backoff and timeout support.",
+  "homepage": "https://github.com/Kikobeats/retry-backoff",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": {
+    "name": "Kiko Beats",
+    "email": "josefrancisco.verdu@gmail.com",
+    "url": "https://github.com/Kikobeats"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikobeats/retry-backoff.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kikobeats/retry-backoff/issues"
+  },
+  "keywords": [
+    "backoff",
+    "callback",
+    "retry",
+    "stream",
+    "timeout"
+  ],
+  "dependencies": {
+    "callback-timeout": "~2.0.0",
+    "debug": "~2.2.0",
+    "is-retry-allowed": "~1.0.0",
+    "is-stream": "~1.1.0",
+    "stream-callback": "~1.0.2"
+  },
+  "devDependencies": {
+    "coffee-script": "latest",
+    "git-dirty": "latest",
+    "mocha": "latest",
+    "should": "latest",
+    "standard": "latest"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "lint": "standard lib index.js",
+    "pretest": "npm run lint",
+    "test": "mocha"
+  },
+  "license": "MIT"
+}
