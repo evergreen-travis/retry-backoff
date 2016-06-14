@@ -27,7 +27,6 @@ function retryBackoff (opts) {
 
     function handleCallback (err) {
       if (!err) return cb.apply(cb, arguments)
-      if (err && err.name === 'TimeoutError') err = {code: 'ETIMEDOUT'}
 
       ++retryCount
       var retry
